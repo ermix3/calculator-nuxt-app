@@ -1,3 +1,7 @@
 <template>
-  <div class="text-red-300">Hello</div>
+	<div class="h-screen bg-gray-200 w-1/3 mx-auto flex justify-center items-center">
+		<TheNavBar />
+    <TheDisplay />
+    <TheBody />
+	</div>
 </template>
