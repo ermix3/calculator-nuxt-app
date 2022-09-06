@@ -1,6 +1,6 @@
 <template>
-	<div class="w-full p-6 bg-black text-green border mt-4 rounded-xl">
-		<h1 class="text-end text-3xl font-bold">
+	<div class="w-full p-6 bg-screen-bg mt-4 rounded-xl">
+		<h1 class="text-end text-3xl text-primary-text font-bold">
 			{{ pressedKey || display }}
 		</h1>
 	</div>
