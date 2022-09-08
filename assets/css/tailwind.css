@@ -31,14 +31,14 @@
 		--toogle-bg: hsla(0, 5%, 81%, 1);
 		--screen-bg: hsla(0, 0%, 93%, 1);
 		/* keys */
-		--key-bg: hsla(185, 42%, 37%, 1);
-		--key-shadow: hsla(185, 58%, 25%, 1);
+		--key-bg: hsla(45, 7%, 89%, 1);
+		--key-shadow: hsla(35, 11%, 61%, 1);
 
 		--toggle-equal-key: hsla(25, 98%, 40%, 1);
 		--equal-key-shadow: hsla(25, 99%, 27%, 1);
 
-		--key2-bg: hsla(45, 7%, 89%, 1);
-		--key2-shadow: hsla(35, 11%, 61%, 1);
+		--key2-bg: hsla(185, 42%, 37%, 1);
+		--key2-shadow: hsla(185, 58%, 25%, 1);
 		/* text */
 		--text-primary: hsla(60, 10%, 19%, 1);
 		--text-sec: hsla(60, 10%, 19%, 1);

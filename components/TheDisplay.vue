@@ -7,10 +7,9 @@
 </template>
 <script lang="ts" setup>
 	const display = ref(0);
-	defineProps<{
+	defineProps({
 		pressedKey: {
-			type: String;
-			required: true;
-		};
-	}>();
+			type: String,
+		},
+	});
 </script>
