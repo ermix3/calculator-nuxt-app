@@ -5,7 +5,9 @@ export default defineNuxtConfig({
 	ssr: true,
 	router: {
     base: '/calculator-nuxt-app/'
-  },
+	},
+	buildDir: 'calculator-nuxt-app',
+
 	modules: ["@nuxtjs/tailwindcss"],
 	buildModules: ["@nuxtjs/google-fonts"],
 	googleFonts: {
