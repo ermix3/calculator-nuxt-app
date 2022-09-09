@@ -34,7 +34,7 @@ const keyEmit = (e: Event) => {
 					? pressedKey.value.replace(/^0+/, '0')
 					: pressedKey.value.replace(/^0+/, '')
 			).toString();
-			break;
+			break; 
 		case '+':
 		case '-':
 		case '/':
