@@ -8,28 +8,30 @@
 	</div>
 </template>
 <script lang="ts" setup>
-	const pressedKey = ref("");
-	const keyEmit = (key: String) => {
-		if (key === "DEL") {
+const pressedKey = ref('');
+const keyEmit = (e: Event) => {
+	const targetValue = (e.target as HTMLButtonElement).value;
+	pressedKey.value = pressedKey.value.replaceAll('x', '*');
+	switch (targetValue) {
+		// case '+' || '-' || '/' || 'x':
+		// 	pressedKey.value = '0' + targetValue;
+		// 	break;
+		case 'DEL':
 			pressedKey.value = pressedKey.value.slice(0, -1);
-			console.log("trimming: ", pressedKey.value);
-			return;
-		}
-		if (key === "Enter") {
-			validExpression(pressedKey.value)
-				? (pressedKey.value = eval(pressedKey.value))
-				: alert("must be  a valid maths expression");
-			return;
-		}
-
-		if (key === "Reset") {
-			pressedKey.value = "";
-			return;
-		}
-		pressedKey.value += key;
-	};
-
-	function validExpression(validExpression) {
-		return false;
+			break;
+		case 'Reset':
+			pressedKey.value = '';
+			break;
+		case 'Enter':
+			pressedKey.value = eval(
+				/^0+\D/.test(pressedKey.value)
+					? pressedKey.value.replace(/^0+/, '0')
+					: pressedKey.value.replace(/^0+/, '')
+			).toString();
+			break;
+		default:
+			pressedKey.value += targetValue;
+			break;
 	}
+};
 </script>
