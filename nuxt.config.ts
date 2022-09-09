@@ -22,4 +22,5 @@ export default defineNuxtConfig({
 		injectPosition: 0,
 		viewer: true,
 	},
+	target: 'static'
 });
