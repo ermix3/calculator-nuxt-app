@@ -3,7 +3,7 @@
 		<button
 			:value="key"
 			@click="
-				$emit('display:modelValue', ($event.target as HTMLButtonElement).value)
+				$emit('display:modelValue', $event)
 			"
 			v-for="key in numbers"
 			:key="key"
@@ -20,7 +20,7 @@
 			value="Reset"
 			class="border-b-4 border-key2-shadow bg-key2-bg col-span-2 py-3 rounded-xl text-3xl text-accent-text font-bold"
 			@click="
-				$emit('display:modelValue', ($event.target as HTMLButtonElement).value)
+				$emit('display:modelValue', $event)
 			"
 		>
 			Reset
@@ -29,7 +29,7 @@
 			class="border-b-4 border-equal-key-shadow bg-toggle-equal-key col-span-2 py-3 rounded-xl text-eq-text text-3xl font-bold"
 			value="Enter"
 			@click="
-				$emit('display:modelValue', ($event.target as HTMLButtonElement).value)
+				$emit('display:modelValue', $event)
 			"
 		>
 			=
@@ -57,6 +57,6 @@
 	];
 	const emit = defineEmits<{
 		// (e: 'change', id: number): void
-		(e: "display:modelValue", value: string): void;
+		(e: "display:modelValue", value: Event): void;
 	}>();
 </script>
