@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Calculator Repo](https://github.com/tenderking/calculator-nuxt-app)
-- Live Site URL: [Live Site](https://tenderking.github.io/calculator-nuxt-app/)
+- Live Site URL: [Live Site](https://calculator-nuxt-app.vercel.app/)
 
 ## My process
 
@@ -56,7 +56,7 @@ We worked with pair programming. And I make sure I use something new of every pr
 
 ### What I learned
 
-I learn to use tailwindcss and nuxt, setup up multiple themes.
+I learn to use tailwindcss and nuxt, setup up multiple themes. Nuxt 3 doesn't work well with github pages, we used vercel instead. This is because Nuxt is server side rendered and github pages is great for hosting static sites or client side rendered apps.
 
 ```js
 pressedKey.value = eval(pressedKey.value);
@@ -111,11 +111,10 @@ Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/prese
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/tenderking)
 
 ## Acknowledgments
+I would like to thank @ermix3, who collaborated with me. We worked well together.
+- [@ermix3](https://github.com/ermix3)
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
