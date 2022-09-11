@@ -5,8 +5,9 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss"],
   buildModules: ["@nuxtjs/google-fonts"],
   googleFonts: {
+    preload: true,
     families: {
-      "League Spartan": true,
+      "League Spartan": [700],
     },
   },
   tailwindcss: {

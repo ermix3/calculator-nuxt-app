@@ -14,12 +14,11 @@
 useHead({
   htmlAttrs: {
     lang: "en",
-    amp: true,
   },
   title: "FrontendMentor: Calculator App",
   // or, instead:
   // titleTemplate: (title) => `My App - ${title}`,
-  viewport: "width=device-width, initial-scale=1, maximum-scale=2",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
   charset: "utf-8",
   meta: [{ name: "description", content: "A multithemed calculator app" }],
 });
