@@ -2,12 +2,28 @@
   <div class="min-h-screen bg-main-bg grid grid-center">
     <div class="max-w-max mx-auto flex flex-col justify-center items-center">
       <TheNavBar />
-      <TheDisplay :pressedKey="pressedKey" />
-      <TheBody @display:model-value="keyEmit" />
+
+      <main>
+        <TheDisplay :pressedKey="pressedKey" />
+        <TheBody @display:model-value="keyEmit" />
+      </main>
     </div>
   </div>
 </template>
 <script lang="ts" setup>
+useHead({
+  htmlAttrs: {
+    lang: "en",
+    amp: true,
+  },
+  title: "FrontendMentor: Calculator App",
+  // or, instead:
+  // titleTemplate: (title) => `My App - ${title}`,
+  viewport: "width=device-width, initial-scale=1, maximum-scale=2",
+  charset: "utf-8",
+  meta: [{ name: "description", content: "A multithemed calculator app" }],
+});
+
 const pressedKey = ref("");
 const keyEmit = (e: Event) => {
   const targetValue = (e.target as HTMLButtonElement).value;

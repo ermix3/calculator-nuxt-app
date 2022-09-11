@@ -1,14 +1,11 @@
 <template>
-  <div class="container flex justify-between items-end">
+  <header class="container flex justify-between items-end">
     <h1 class="text-primary-text text-3xl font-bold">calc</h1>
     <div class="flex items-end gap-4">
       <h2 class="text-sm text-primary-text font-bold">THEME</h2>
 
       <div class="flex flex-col justify-center">
-        <p
-          class="self-center text-primary-text hover:cursor-pointer"
-          @click="toggleTheme()"
-        >
+        <p class="self-center text-primary-text hover:cursor-pointer">
           <span>1</span>
           <span class="mx-4">2</span>
           <span>3</span>
@@ -21,11 +18,17 @@
             width="71"
             height="16"
             viewBox="0 0 16 16"
+            id="button"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:cursor-pointer"
             @click="toggleTheme()"
+            aria-labelledby="toggleBtn"
+            role="button"
+            tabindex="0"
           >
+            <title id="toggleBtn">The toggle button</title>
+
             <circle
               :cx="cx"
               cy="8"
@@ -36,7 +39,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </header>
 </template>
 <script lang="ts" setup>
 let cx = ref(-16);
